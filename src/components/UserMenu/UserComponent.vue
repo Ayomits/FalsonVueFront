@@ -12,7 +12,7 @@
       <UserMenu :show-menu="showMenu">
         <UserMenuItem :icon-path="profileIcon" title="Профиль" />
         <UserMenuItem :icon-path="servers" title="Мои серверы" />
-        <UserMenuItem :icon-path="logoutIcon" title="Выход" />
+        <UserMenuItem @click="logout" :icon-path="logoutIcon" title="Выход" />
       </UserMenu>
     </div>
     <div v-if="!isAuth" class="login">
@@ -36,12 +36,7 @@ export default defineComponent({
     UserMenu,
     UserMenuItem,
   },
-  props: {
-    isAuth: {
-      type: Boolean,
-      required: true,
-    },
-  },
+
   directives: {
     clickOutside,
   },
@@ -51,6 +46,7 @@ export default defineComponent({
       profileIcon,
       logoutIcon,
       servers,
+      isAuth: false
     };
   },
   methods: {
@@ -61,7 +57,7 @@ export default defineComponent({
       window.location.href = "http://localhost:3000/api/auth/discord/login";
     },
     logout() {
-      console.log("Logged out");
+      this.isAuth = false
       this.showMenu = false;
       // Логика выхода из системы
     },

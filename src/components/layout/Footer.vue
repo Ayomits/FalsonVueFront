@@ -15,7 +15,7 @@
       <img src="@assets/telegram.svg" alt="">
       <img src="@assets/discord.svg" alt="">
       <img src="@assets/nest.svg" alt="">
-      <img src="@assets/react.svg" alt="">
+      <img src="@assets/vue.svg" alt="">
     </div>
   </div>
 </template>

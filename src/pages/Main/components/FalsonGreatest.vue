@@ -11,9 +11,6 @@
         <div class="actions">
           <ButtonComponent color="#5887ff"> Пригласить </ButtonComponent>
           <ButtonComponent color="#444"> Сервер поддержки </ButtonComponent>
-          <ButtonComponent color="#8084c0">
-            <router-link to="servers">Мои серверы </router-link>
-          </ButtonComponent>
         </div>
       </div>
     </div>

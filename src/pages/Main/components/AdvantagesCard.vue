@@ -39,8 +39,8 @@ export default defineComponent({
 @media (max-width:768px) {
   .advantages-card {
     background-color: #608CFF;
-    width: 500px;
-    height: 260px;
+    width: 250px;
+    height: 200px;
     border-radius: 16px;
     font-family: "Roboto", sans-serif;
     display: flex;
