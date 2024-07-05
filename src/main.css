@@ -1,0 +1,24 @@
+html {
+  color-scheme: dark;
+  &[data-theme=light] { color-scheme: light; }
+  &[data-theme=dark] { color-scheme: dark; }
+}
+body {
+  min-height: 100vh; /* Занимает всю высоту видимой области */
+  background: rgb(39, 44, 47);
+  background: linear-gradient(
+    0deg,
+    rgba(39, 44, 47, 1) 0%,
+    rgba(57, 61, 63, 1) 100%
+  );
+  background-repeat: no-repeat;
+  color: white;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    /* Пример настройки фона для малых устройств */
+    background: rgb(57, 61, 63);
+  }
+}
