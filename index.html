@@ -1,12 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best bot for verification" />
+    <meta
+      name="keywords"
+      content="бот, верификация, дискорд, верификации, verify, bot, discord, discord.com, Discord inc, Falson, akakuke, ayomi, pvashkaaa"
+    />
+
+    <meta property="og:title" content="Falson bot" />
+    <meta property="og:description" content="The best bot for verification" />
+    <meta property="og:image" content="https://imgur.com/Qp9PGUB" />
+    <meta property="og:url" content="https://falsonbot.pro" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Falson bot" />
+    <meta name="twitter:description" content="The best bot for verification" />
+    <meta name="twitter:image" content="https://imgur.com/Qp9PGUB" />
+
+    <link rel="icon" type="image/svg+xml" href="/logo.ico" />
     <title>Falson</title>
   </head>
   <body>
+    <style>
+      html {
+        color-scheme: dark;
+        &[data-theme="light"] {
+          color-scheme: light;
+        }
+        &[data-theme="dark"] {
+          color-scheme: dark;
+        }
+      }
+      body {
+        min-height: 100vh;
+        background: rgb(12, 12, 12);
+        background-repeat: no-repeat;
+        background-image: url("bg.svg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      @media (max-width: 1000px) {
+        body {
+          background: rgb(12, 12, 12);
+        }
+      }
+    </style>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
