@@ -4,13 +4,24 @@
       <div class="greatest-main">
         <div class="bot-name">Falson</div>
         <p class="description">
-          Многофункциональное решение для верификации на Вашем сервере
+          {{ $t("pages.main.greatest.description") }}
         </p>
       </div>
       <div class="additional-content">
         <div class="actions">
-          <ButtonComponent color="#5887ff"> Пригласить </ButtonComponent>
-          <ButtonComponent color="#444"> Сервер поддержки </ButtonComponent>
+          <a
+            target="_blank"
+            href="https://discord.com/oauth2/authorize?client_id=1248964892132905002&permissions=8&integration_type=0&scope=bot"
+          >
+            <ButtonComponent color="#5887ff">
+              {{ $t("pages.main.greatest.invite") }}
+            </ButtonComponent>
+          </a>
+          <a target="_blank" href="https://discord.gg/XZygw5BhyP">
+            <ButtonComponent color="#444">
+              {{ $t("pages.main.greatest.supportServer") }}
+            </ButtonComponent>
+          </a>
         </div>
       </div>
     </div>
@@ -20,8 +31,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import LogoComponent from "@ui/LogoComponent.vue";
-import ButtonComponent from "@ui/ButtonComponent.vue";
+import LogoComponent from "@src/components/Ui/Logo/LogoComponent.vue";
+import ButtonComponent from "@src/components/Ui/Button/ButtonComponent.vue";
 
 export default defineComponent({
   name: "FalsonGreatest",

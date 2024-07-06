@@ -1,9 +1,4 @@
 <template>
-  <MainLayout>
-    <div>
-      Idc
-    </div>
-  </MainLayout>
 </template>
 
 <script lang="ts">

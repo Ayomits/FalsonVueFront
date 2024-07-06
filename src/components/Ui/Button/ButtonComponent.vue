@@ -22,7 +22,7 @@ export default defineComponent({
 button {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1em;
 }

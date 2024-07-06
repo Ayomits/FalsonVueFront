@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import Advantages from "@src/pages/Main/components/Advantages.vue";
-import FalsonGreatest from "@src/pages/Main/components/FalsonGreatest.vue";
+import Advantages from "@src/components/Advantages/Advantages.vue";
+import FalsonGreatest from "@src/components/Falson/index.vue";
 import Header from "@src/components/layout/Header.vue";
 import MainLayout from "@src/layouts/MainLayout.vue";
 

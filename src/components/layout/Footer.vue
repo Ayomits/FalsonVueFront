@@ -1,21 +1,21 @@
 <template>
   <div class="footer">
     <div class="warning">
-      <p>Мы не являемся аффилированным лицом компании Discord inc.</p>
+      <p>{{$t("pages.main.footer.affiliredCompany")}}</p>
       <p>© 2024 «FalsonBot.pro»</p>
     </div>
     <div class="usefulLinks">
-      <router-link class="link" to="tos">Команды</router-link>
+      <router-link class="link" to="commands">{{$t("pages.main.footer.commands")}}</router-link>
       <router-link class="link" to="tos">Tos</router-link>
-      <router-link class="link" to="tos"
-        >Политика конфидециальности</router-link
+      <router-link class="link" to="privacy"
+        >{{$t("pages.main.footer.privacy")}}</router-link
       >
     </div>
     <div class="libraries">
-      <img src="@assets/telegram.svg" alt="">
-      <img src="@assets/discord.svg" alt="">
-      <img src="@assets/nest.svg" alt="">
-      <img src="@assets/vue.svg" alt="">
+      <img src="@assets/telegram.svg" alt="" />
+      <img src="@assets/discord.svg" alt="" />
+      <img src="@assets/nest.svg" alt="" />
+      <img src="@assets/vue.svg" alt="" />
     </div>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default defineComponent({
 .warning {
   max-width: 40%;
 }
-.libraries{
+.libraries {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;

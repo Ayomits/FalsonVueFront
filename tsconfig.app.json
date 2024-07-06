@@ -32,7 +32,8 @@
       "@pages/*": ["./src/pages/*"],
       "@ui/*": ["./src/components/Ui/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@directives/*": ["./src/directives/*"]
+      "@directives/*": ["./src/directives/*"],
+      "@locales/*": ["./src/locales/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]

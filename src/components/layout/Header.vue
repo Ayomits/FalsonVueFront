@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <NavigationComponent />
+    <LanguageSwitcher />
     <UserComponent :isAuth="isAuth" />
   </header>
 </template>
@@ -8,14 +9,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import NavigationComponent from "../Navigation/NavigationComponent.vue";
-import UserComponent from "../UserMenu/UserComponent.vue";
-
+import UserComponent from "../UserMenu/index.vue";
+import LanguageSwitcher from "@components/LanguageSwitcher/index.vue";
 
 export default defineComponent({
   name: "Header",
   components: {
     NavigationComponent,
     UserComponent,
+    LanguageSwitcher,
   },
   data() {
     return {

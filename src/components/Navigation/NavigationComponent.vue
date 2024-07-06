@@ -6,17 +6,17 @@
     <div class="navigation-links">
       <router-link class="navigation-item" to="commands">
         <img src="@assets/cog.svg" alt="commands" />
-        Команды
+        {{ $t(`pages.main.header.commands`) }}
       </router-link>
-      <router-link class="navigation-item" to="commands">
+      <router-link class="navigation-item" to="tos">
         <img src="@assets/tos.svg" alt="tos" /> TOS
       </router-link>
-      <router-link class="navigation-item" to="commands">
-        <img src="@assets/partners.svg" alt="partners" /> Партнёры
+      <router-link class="navigation-item" to="partners">
+        <img src="@assets/partners.svg" alt="partners" />  {{ $t(`pages.main.header.partners`) }}
       </router-link>
-      <router-link style="color: white" class="navigation-item" to="commands">
+      <router-link style="color: white" class="navigation-item" to="coffee">
         <img src="@assets/heart.svg" alt="heart" /> 
-        Подарите нам кофе :3
+        {{ $t(`pages.main.header.coffee`) }}
       </router-link>
     </div>
   </div>
@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import LogoComponent from "@components/Ui/LogoComponent.vue";
+import LogoComponent from "@src/components/Ui/Logo/LogoComponent.vue";
 export default defineComponent({
   name: "NavigationComponent",
   components: {

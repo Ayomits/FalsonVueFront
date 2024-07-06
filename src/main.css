@@ -5,12 +5,7 @@ html {
 }
 body {
   min-height: 100vh; /* Занимает всю высоту видимой области */
-  background: rgb(39, 44, 47);
-  background: linear-gradient(
-    0deg,
-    rgba(39, 44, 47, 1) 0%,
-    rgba(57, 61, 63, 1) 100%
-  );
+  background: rgb(12, 12, 12);
   background-repeat: no-repeat;
   color: white;
   overflow-x: hidden;
@@ -21,4 +16,4 @@ body {
     /* Пример настройки фона для малых устройств */
     background: rgb(57, 61, 63);
   }
-}
+} 

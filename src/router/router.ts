@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import CommandsPage from '../pages/Commands/CommandsPage.vue'
-import MainPage from "../pages/Main/MainPage.vue";
+import MainPage from "../pages/MainPage.vue";
+import NotFound from "@pages/404.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -11,8 +11,9 @@ export const router = createRouter({
       component: MainPage,
     },
     {
-      path: "/commands",
-      component: CommandsPage
-    }
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: NotFound,
+    },
   ],
 });

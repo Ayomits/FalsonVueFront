@@ -17,6 +17,7 @@ export default defineConfig({
       "@ui": path.resolve(__dirname, "src/components/Ui"),
       "@layouts": path.resolve(__dirname, "src/layouts"),
       "@directives": path.resolve(__dirname, "src/directives"),
+      "@locales": path.resolve(__dirname, "src/locales"),
     },
   },
 });

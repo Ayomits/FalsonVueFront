@@ -16,7 +16,7 @@
       </UserMenu>
     </div>
     <div v-if="!isAuth" class="login">
-      <button @click="redirectToLoginPage" class="loginBtn">Войти</button>
+      <button @click="redirectToLoginPage" class="loginBtn">{{ $t("pages.main.header.logIn") }}</button>
     </div>
   </div>
 </template>
@@ -24,8 +24,8 @@
 <script lang="ts">
 import clickOutside from "@src/directives/click-outside";
 import { defineComponent } from "vue";
-import UserMenu from "./UserMenu.vue";
-import UserMenuItem from "./UserMenuItem.vue";
+import UserMenu from "@components/Ui/DropDown/DropdownMenu.vue";
+import UserMenuItem from "@components/Ui/DropDown/DropdownMenuItem.vue";
 import profileIcon from "@assets/user.svg";
 import logoutIcon from "@assets/logout.svg";
 import servers from "@assets/servers.svg";
@@ -46,7 +46,7 @@ export default defineComponent({
       profileIcon,
       logoutIcon,
       servers,
-      isAuth: false
+      isAuth: false,
     };
   },
   methods: {
@@ -57,7 +57,7 @@ export default defineComponent({
       window.location.href = "http://localhost:3000/api/auth/discord/login";
     },
     logout() {
-      this.isAuth = false
+      this.isAuth = false;
       this.showMenu = false;
       // Логика выхода из системы
     },

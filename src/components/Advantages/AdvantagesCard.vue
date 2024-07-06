@@ -21,7 +21,7 @@ export default defineComponent({
   background-color: #608CFF;
   width: 500px;
   height: 160px;
-  border-radius: 16px;
+  border-radius: 20px;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
