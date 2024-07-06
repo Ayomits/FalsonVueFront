@@ -10,10 +10,3 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
-@media (max-width: 768px) {
-  body {
-    /* Пример настройки фона для малых устройств */
-    background: rgb(57, 61, 63);
-  }
-} 
