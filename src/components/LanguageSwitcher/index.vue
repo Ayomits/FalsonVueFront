@@ -1,6 +1,10 @@
 <template>
   <div>
-    <select class="languageSwitcher" v-model="selectedLanguage" @change="changeLanguage">
+    <select
+      class="languageSwitcher"
+      v-model="selectedLanguage"
+      @change="changeLanguage"
+    >
       <option class="languageSwitcherOption" value="en">English</option>
       <option class="languageSwitcherOption" value="ru">Русский</option>
     </select>
@@ -8,19 +12,23 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import { useI18n } from 'vue-i18n';
+import { defineComponent, ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
 
 export default defineComponent({
-  name: 'LanguageSwitcher',
+  name: "LanguageSwitcher",
   setup() {
     const { locale } = useI18n();
-    const selectedLanguage = ref(localStorage.getItem('locale') || 'en');
+    const selectedLanguage = ref(localStorage.getItem("locale") || "ru");
 
     const changeLanguage = () => {
       locale.value = selectedLanguage.value;
-      localStorage.setItem('locale', selectedLanguage.value);
+      localStorage.setItem("locale", selectedLanguage.value);
     };
+
+    onMounted(() => {
+      locale.value = selectedLanguage.value;
+    });
 
     return { selectedLanguage, changeLanguage };
   },
@@ -33,7 +41,6 @@ export default defineComponent({
   border: 1px solid white;
   color: white;
   cursor: pointer;
-  border: none;
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 16px;
