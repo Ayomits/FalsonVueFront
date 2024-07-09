@@ -19,10 +19,15 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
 button {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 14px;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 1em;
 }

@@ -44,6 +44,15 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+.body {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.header {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
 a {
   text-decoration: none;
   color: white;
@@ -77,6 +86,7 @@ a {
 
 .description {
   opacity: 50%;
+  margin-top: -6%
 }
 
 .additional-content {
@@ -84,7 +94,8 @@ a {
 }
 
 .actions {
-  display: flex;
+  margin-top: 2%;
+   display: flex;
   gap: 20px;
 }
 

@@ -74,6 +74,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
 .user {
   display: flex;
   align-items: center;
@@ -81,12 +83,15 @@ export default defineComponent({
 }
 
 .auth-container {
+
   display: flex;
   align-items: center;
   gap: 10px;
   position: relative; /* Добавлено для позиционирования меню */
 }
 .user-info {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -95,8 +100,7 @@ export default defineComponent({
 
 .nickname {
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "M PLUS Rounded 1c", sans-serif;  font-weight: 500;
 }
 .nickname:hover {
   color: #45b4ff;
@@ -108,11 +112,14 @@ export default defineComponent({
   border-radius: 50%;
 }
 .loginBtn {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   background-color: #5887ff;
   border: none;
   border-radius: 10px;
   width: 100px;
   height: 40px;
+  font-size:16px;
   color: white;
   cursor: pointer;
   font-weight: 600;

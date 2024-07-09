@@ -30,13 +30,15 @@ export default defineComponent({
 
 <style>
 .footer {
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 700;
 }
 .usefulLinks {

@@ -34,19 +34,29 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
 .navigation {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
   display: flex;
   align-items: center;
   gap: 3px;
 }
 .navigation-links {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   gap: 60px;
 }
 .navigation-item {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size:15px;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s, filter 0.3s;
