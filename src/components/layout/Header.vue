@@ -2,7 +2,6 @@
   <header class="header">
     <NavigationComponent />
     <LanguageSwitcher />
-    <UserComponent :isAuth="isAuth" />
   </header>
 </template>
 
